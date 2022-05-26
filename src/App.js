@@ -40,7 +40,7 @@ export default function App() {
 }
 
 const Comp = (props) => {
-  if (props?.x > 9) {
+  if (props?.x < 4) {
     throw new Error('invalid');
   } else {
     return <strong>{props?.x}</strong>;
